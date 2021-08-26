@@ -4,9 +4,9 @@ WORKDIR /root
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     build-essential cmake automake libtool m4 bc gawk flex bison pkg-config \
-    python squashfs-tools libncurses-dev \
-    mtd-utils genext2fs libxml2-dev \
+    python squashfs-tools libncurses-dev mtd-utils genext2fs libxml2-dev \
     tzdata git vim tmux bzip2 p7zip tree curl openssh-client bash-completion \
+    net-tools python3 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN TZ=Asia/Taipei \
