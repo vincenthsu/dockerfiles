@@ -1,4 +1,4 @@
 #!/bin/bash
 
-IMAGE_NAME=furbo-build
+IMAGE_NAME=vincenthsu/furbo-build
 docker build -t $IMAGE_NAME .
