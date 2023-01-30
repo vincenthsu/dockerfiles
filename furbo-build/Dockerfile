@@ -5,7 +5,7 @@ RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     build-essential cmake automake libtool m4 bc gawk flex bison pkg-config \
     python squashfs-tools libncurses-dev mtd-utils genext2fs libxml2-dev \
-    tzdata git vim tmux bzip2 p7zip zip tree curl \
+    tzdata git vim tmux bzip2 p7zip unzip tree curl wget \
     bash-completion openssh-client ca-certificates \
     net-tools htop iftop nmap netcat \
   && apt-get clean \
